@@ -10,8 +10,8 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background-color: #f5f5f5;
-  color: #4e4e4e;
+	background: linear-gradient(to right, #001719, #31525a);
+	  color: #000000;
 }
 
 h1,
@@ -20,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #1e1e1e;
+  color: #e8e8e8;
 }
 
 a {
@@ -177,10 +177,32 @@ a:hover {
 .title-box-2 {
   margin-bottom: 3rem;
 }
+.leader, .lead {
+	transition: all 0.1s ease-in-out;
+	opacity: 1;
+	box-shadow: 0 4px 8px 0 rgba(228, 178, 178, 0.347);
+	padding: .5rem;
+}
 
+.leader:hover {
+	transform: scale(1.1) rotate(3deg);
+	/* opacity: 0.7; */
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	backdrop-filter: blur(5px);
+}
+
+.lead:hover {
+	transform: scale(1.05) rotate(-3deg);
+	color: #000; /* Change the color to make the text more readable */
+	background-color: #fff; /* Add a background color to improve contrast */
+	backdrop-filter: blur(5px); /* Add this line */
+
+	box-shadow: 0 8px 316px 110px rgba(0,0,0,0.2);
+}
 .title-left {
   font-size: 2rem;
   position: relative;
+  color: #000;
 }
 
 .title-left:before {
